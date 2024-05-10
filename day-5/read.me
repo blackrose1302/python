@@ -1,0 +1,30 @@
+## commmand line arguments ##
+
+The arguments that are given after the name of the program in the command line shell of the operating system are known as Command Line Arguments
+We usually pass these values along with the name of the Python script.
+we execute the following command in the command prompt terminal of the operating system.
+The three most common are: 
+
+Using sys.argv
+Using getopt module
+Using argparse module
+
+1. Using sys.argv -- provides functions and variables used to manipulate different parts of the Python runtime environment. 
+ It’s main purpose are:
+
+It is a list of command line arguments.
+len(sys.argv) provides the number of command line arguments.
+sys.argv[0] is the name of the current Python script. 
+
+2. Using getopt module -- it is required to remove the first element from the list of command-line arguments. 
+
+3. Using argparse module -- it provides a lot of options such as positional arguments, default value for arguments, help message, specifying data type of argument.
+
+## Environment Variables in Python ##
+
+there are fixed number of env variable in pyton, but we can create our own env variable as well as.
+
+export password = "qwertgfd"  ## this is added to env variable in python.
+
+now we can use this any python script to extract the value and use it by using "os" module.
+
