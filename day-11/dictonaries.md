@@ -19,18 +19,22 @@ and can be printed as
 
   print(thisdict["brand"])
 
+
 ## Ordered or Unordered? ##
 
 When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.
 Unordered means that the items do not have a defined order, you cannot refer to an item by using an index.
 
+
 ## Changeable ##
 
 Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
 
+
 ## Duplicates Not Allowed ##
 
 Dictionaries cannot have two items with the same key. Duplicate values will overwrite existing values:
+
 
 ## Dictionary Length ##
 
@@ -38,15 +42,38 @@ To determine how many items a dictionary has, use the len() function:
     print(len(thisdict))
 
 
+## Modifying and Adding Elements ##
+
+thisdict["year"] = "2014"  #modifiying the value
+thisdict["model_code"] = "S550" #adding new value
+
+
+## Removing Elements ##
+
+del thisdict["model_code]
+
+
+## Checking Key Existence ##
+
+if 'year' in thisdict():
+    print("year present in dictionary)
+
+
+## Iterating Through Keys and Values ##
+
+for key, value in thisdict.items():
+    print(key, value)
+
+
 ## Dictionary Items - Data Types ##
 
 The values in dictionary items can be of any data type: String, int, boolean, and list data types:
 
 
-
 ## type() ##
 
 From Python's perspective, dictionaries are defined as objects with the data type 'dict': <class 'dict'>
+
 
 ## The dict() Constructor ##
 
